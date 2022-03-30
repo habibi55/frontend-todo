@@ -2,7 +2,21 @@
   "devDependencies": {
     "tailwindcss": "^3.0.23"
   },
-   "scripts": {
+  "scripts": {
     "build": "npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch"
-  }
+  },
+  "name": "frontend-todo",
+  "description": "npm init",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/habibi55/frontend-todo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/habibi55/frontend-todo/issues"
+  },
+  "homepage": "https://github.com/habibi55/frontend-todo#readme"
 }

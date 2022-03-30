@@ -1,1 +1,2 @@
-npm init
+Jalankan:
+npm install -D tailwindcss
