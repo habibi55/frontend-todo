@@ -21,12 +21,12 @@
 
 <body class="font-poppins">
   <!-- START:HEADER -->
-  <header class="flex justify-between p-3 bg-nav">
+  <header class="flex justify-between p-2 px-12 bg-primer">
     <div class="flex items-center">
       <div class="flex items-center">
-        <svg class="max-h-10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%"
-          zoomAndPan="magnify" viewBox="0 0 375 374.999991" height="100%" preserveAspectRatio="xMidYMid meet"
-          version="1.0">
+        <svg class="max-h-10 fill-cyan-700" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" zoomAndPan="magnify" viewBox="0 0 375 374.999991"
+          height="100%" preserveAspectRatio="xMidYMid meet" version="1.0">
           <defs>
             <clipPath id="id1">
               <path
@@ -40,17 +40,17 @@
             </clipPath>
           </defs>
           <g clip-path="url(#id1)">
-            <path fill="rgb(0%, 0%, 0%)"
+            <path
               d="M 109.496094 32.363281 L 109.496094 93.015625 L 146.953125 93.015625 L 146.953125 69.816406 L 305.402344 69.816406 L 305.402344 228.269531 L 146.953125 228.269531 L 146.953125 163.433594 L 109.496094 163.433594 L 109.496094 265.722656 L 342.855469 265.722656 L 342.855469 32.363281 L 109.496094 32.363281 "
               fill-opacity="1" fill-rule="nonzero" />
           </g>
           <g clip-path="url(#id2)">
-            <path fill="rgb(0%, 0%, 0%)"
+            <path
               d="M 228.265625 305.402344 L 69.816406 305.402344 L 69.816406 146.953125 L 228.265625 146.953125 L 228.265625 211.785156 L 265.722656 211.785156 L 265.71875 109.5 L 32.359375 109.5 L 32.359375 342.859375 L 265.722656 342.859375 L 265.722656 282.203125 L 228.265625 282.203125 L 228.265625 305.402344 "
               fill-opacity="1" fill-rule="nonzero" />
           </g>
         </svg>
-        <h2 class="pl-1 text-xl font-bold">Ingetin</h2>
+        <h2 class="pl-1 text-xl font-bold">ingetin</h2>
       </div>
 
       <nav class="pl-2">
@@ -59,10 +59,43 @@
 
     </div>
     <div>
-      <img class="max-h-10 rounded-full" src="/src/img/mini-profile.png" alt="">
+      <img class="max-h-8 rounded-full" src="/src/img/mini-profile.png" alt="">
     </div>
   </header>
   <!-- END:HEADER -->
+
+  <!-- START:Task -->
+  <main class="flex gap-12 px-12 mt-10">
+    <div class="w-1/4">
+      <div class="flex justify-between items-center">
+        <h1 class="font-bold">Unscheduled</h1>
+        <button class="p-1 hover:bg-gray-100 rounded transition duration-300">
+          <svg class="h-6 w-6 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <line x1="5" y1="12" x2="19" y2="12" /></svg>
+        </button>
+      </div>
+
+      <div class="flex flex-row flex-nowrap">
+        <div class="border-2 rounded shadow-md w-full">
+          <h1>Mantap</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-1/4">
+      <h1>Title</h1>
+    </div>
+
+    <div class="w-1/4">
+      <h1>Title</h1>
+    </div>
+    <div class="w-1/4">
+      <h1>Title</h1>
+    </div>
+  </main>
+  <!-- END:Task -->
 
 
 </body>
