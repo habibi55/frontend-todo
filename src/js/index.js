@@ -6,17 +6,17 @@ function edit() {
   document.getElementById("kategori").innerHTML = "Kelompok";
 }
 
-openModalButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const modal = document.querySelector(button.dataset.modalTarget);
-    openModal(modal);
-  });
-});
-
 overlay.addEventListener("click", () => {
   const modals = document.querySelectorAll(".modal.active");
   modals.forEach((modal) => {
     closeModal(modal);
+  });
+});
+
+openModalButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const modal = document.querySelector(button.dataset.modalTarget);
+    openModal(modal);
   });
 });
 
