@@ -12,11 +12,13 @@
 
   <!-- Tailwind CSS -->
   <link rel="stylesheet" href="css/output.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <!-- Google Font -->
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+  <script defer src="/src/js/index.js"></script>
 </head>
 
 <body class="font-poppins">
@@ -80,8 +82,8 @@
       </div>
 
       <!-- START:Card Task -->
-      <div class="flex flex-col flex-nowrap px-3 pb-3">
-        <div class="flex flex-col items-start rounded-lg bg-white shadow-md">
+      <button class=" flex flex-col flex-nowrap px-3 pb-3">
+        <div data-modal-target="#modal" class="flex flex-col items-start rounded-lg bg-white shadow-md">
           <div class="flex items-center rounded-t-lg bg-green-200 w-full p-2">
             <svg class="h-5 w-5 fill-green-500" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24"
@@ -99,7 +101,7 @@
           </div>
 
           <div class="flex flex-col items-start px-2 py-1">
-            <h1 class="font-semibold text-base mb-1">Membuat Visualisasi dengan memberikan jancok</h1>
+            <h1 class="font-semibold text-base mb-1 text-left">Membuat Visualisasi dengan memberikan jancok</h1>
             <div id="kategori" class="text-xs px-2 bg-purple-300 rounded-sm text-center mt-1">
               Individu
             </div>
@@ -172,17 +174,13 @@
               </div>
             </div>
           </div>
-
-
-
-
-
         </div>
-      </div>
+      </button>
       <!-- END:Card Task -->
 
     </div>
     <!-- END:Unscheduled -->
+
 
     <!-- START:Today -->
     <div class="w-full lg:w-1/4 h-full bg-gray-100 rounded-lg">
@@ -610,7 +608,17 @@
   </main>
   <!-- END:Pembagian Task -->
 
-  <script src="/src/js/index.js"></script>
+  <!-- POP UP -->
+  <div class="flex justify-center items-center">
+    <div class="fixed rounded-md bg-blue-300 max-w-lg p-2 modal" id="modal">
+      <h1>mantap </h1>
+      <p>kok bisa</p>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+  </div>
+
+  <div id="overlay"></div>
+
 </body>
 
 </html>
