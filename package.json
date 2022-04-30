@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/habibi55/frontend-todo/issues"
   },
-  "homepage": "https://github.com/habibi55/frontend-todo#readme"
+  "homepage": "https://github.com/habibi55/frontend-todo#readme",
+  "dependencies": {
+    "swiper": "^8.1.4"
+  }
 }
