@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .section-task {
+    @apply snap-center shrink-0 h-full w-110 bg-gray-100 rounded-lg;
+  }
+
+  /* Pop Up Task */
+  .label {
+    @apply flex my-4;
+  }
+
+  .kategori {
+    @apply w-1/4 font-normal text-gray-500;
+  }
+
+  .icon-popup {
+    @apply h-5 w-5 mr-2 opacity-50;
+  }
+}
+
+@layer utilities {
+  .w-110 {
+    width : 28rem;
+}
+}
