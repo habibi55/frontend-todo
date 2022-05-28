@@ -471,7 +471,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .section-task {
   height: 100%;
   flex-shrink: 0;
-  scroll-snap-align: center;
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -546,20 +545,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0.5rem;
 }
 
-.ml-7 {
-  margin-left: 1.75rem;
-}
-
 .ml-8 {
   margin-left: 2rem;
 }
 
-.ml-5 {
-  margin-left: 1.25rem;
-}
-
-.ml-6 {
-  margin-left: 1.5rem;
+.ml-7 {
+  margin-left: 1.75rem;
 }
 
 .flex {
@@ -618,6 +609,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 50%;
 }
 
+.cursor-grab {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -654,10 +650,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 1rem;
 }
 
-.overflow-x-scroll {
-  overflow-x: scroll;
-}
-
 .rounded-full {
   border-radius: 9999px;
 }
@@ -681,6 +673,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 .rounded-t-lg {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-gray-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 
 .bg-primer {
@@ -894,6 +895,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cursor-grab {
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
 .hover\:bg-neutral-200:hover {

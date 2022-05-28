@@ -14,5 +14,5 @@ module.exports = {
       poppins: ["Poppins", "sans-serif"],
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-cursor-extended")(["responsive"])],
 };

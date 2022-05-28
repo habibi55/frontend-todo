@@ -4,7 +4,7 @@
 
 @layer components {
   .section-task {
-    @apply snap-center shrink-0 h-full w-110 bg-gray-100 rounded-lg;
+    @apply shrink-0 h-full w-110 bg-gray-100 rounded-lg;
   }
 
   /* Pop Up Task */
@@ -19,7 +19,9 @@
   .icon-popup {
     @apply h-5 w-5 mr-2 opacity-50;
   }
+
 }
+
 
 @layer utilities {
   .w-110 {
