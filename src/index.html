@@ -24,7 +24,7 @@
 
 <body class="font-poppins">
   <!-- START:HEADER -->
-  <header class="flex justify-between p-2 px-12 bg-primer ">
+  <header class="w-full flex justify-between p-2 px-12 bg-white fixed">
     <div class="flex items-center">
       <div class="flex items-center">
         <svg class="max-h-10 fill-cyan-700" xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +53,7 @@
               fill-opacity="1" fill-rule="nonzero" />
           </g>
         </svg>
-        <h2 class="pl-1 text-xl font-bold">ingetin</h2>
+        <h2 class="pl-1 text-xl font-bold">Ingetin</h2>
       </div>
 
       <nav class="pl-2">
@@ -61,15 +61,17 @@
       </nav>
 
     </div>
-    <div>
+    <div class="">
       <img class="max-h-8 rounded-full" src="/src/img/mini-profile.png" alt="">
     </div>
   </header>
   <!-- END:HEADER -->
 
+  <div class="w-full flex justify-between py-8 bg-white">
+  </div>
 
   <!-- START:Pembagian Task (FLEX)-->
-  <main class="w-full flex gap-4 pb-14 px-10 mt-5 justify-between cursor-grab ">
+  <main class="w-full bg-white flex gap-4 pb-14 px-10 pt-50 justify-between cursor-grab ">
 
     <!-- START:Unscheduled -->
     <div class="section-task">
@@ -629,7 +631,7 @@
           </svg>
           <h1 class="text-xl text-gray-500">Status</h1>
         </div>
-        <div>
+        <div class="w-max bg-yellow-300 rounded-sm text-center ml-8 px-2 inline-block">
           In Progress
         </div>
       </div>
@@ -643,7 +645,16 @@
           </svg>
           <h1 class="text-xl text-gray-500">Kategori</h1>
         </div>
-        <h2 class="w-full ml-8">Isi</h2>
+
+        <div class="flex flex-row ml-8 gap-2">
+          <div id="kategori" class="px-2 bg-purple-300 rounded-sm text-center">
+            Individu
+          </div>
+          <div id="kategori" class="px-2 bg-blue-300 rounded-sm text-center">
+            Kuliah
+          </div>
+        </div>
+
       </div>
 
       <div class="flex flex-col mb-2">
