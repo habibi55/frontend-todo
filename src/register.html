@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ingetin</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Logo Web -->
+  <link rel="icon" href="/src/img/logo.svg">
+
+  <!-- Tailwind CSS -->
+  <link rel="stylesheet" href="css/output.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="font-poppins">
+
+  <main class="flex flex-row">
+
+    <!-- START: Left-Content -->
+    <div class="hidden lg:inline bg-green-200 w-1/2 h-screen">
+
+
+    </div>
+    <!-- END: Left-Content -->
+
+    <!-- START: Right-Content -->
+    <div class="flex w-1/2 items-center lg:px-60 justify-center">
+
+      <div class="flex flex-col w-full">
+        <h1 class="font-semibold text-center text-xl">Sign up to Ingetin</h1>
+        <h2 class="opacity-50 text-center mb-5">Join Ingetin and write your task</h2>
+
+        <form action="login" method="post">
+
+          <div>
+            <label for="name">Full Name</label>
+            <input name="name" class=" border border-gray-300 rounded-lg w-full py-3 px-4 text-xs" id="email"
+              type="text" placeholder="Your Name" required>
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input name="email" class="border border-gray-300 rounded-lg w-full py-3 px-4 text-xs" id="email"
+              type="email" placeholder="name@domain.com" required>
+          </div>
+
+          <div>
+            <label for="password">Password</label>
+            <input name="password" class="border border-gray-300 rounded-lg w-full py-3 px-4 text-xs" id="password"
+              type="password" placeholder="At least 8 characters" required>
+          </div>
+
+          <div>
+            <input type="checkbox" class="form-checkbox h-5 w-5 text-serv-button rounded border-serv-text"><span
+              class="ml-2 text-gray-400">I agree to the <a href="#" class="text-serv-button">Terms &
+                Conditions</a></span>
+          </div>
+
+          <button>
+            Sign Up
+          </button>
+
+          <div></div>
+
+        </form>
+      </div>
+
+
+    </div>
+    <!-- END: Right-Content -->
+  </main>
+
+</body>
+
+</html>
