@@ -31,18 +31,14 @@
 
     <!-- START: Right-Content -->
     <div class="flex flex-col w-full md:w-1/2 justify-center items-center px-16 md:px-44 h-screen">
-      <h1 class="font-semibold text-center text-2xl md:text-3xl mb-2">Sign up to Ingetin</h1>
-      <h2 class="w-full opacity-50 text-center mb-3 text-xs md:text-sm">Join Ingetin and write your task</h2>
 
-      <form class="w-full" action="register" method="post">
+      <!-- Header -->
+      <h1 class="font-semibold text-center text-2xl md:text-3xl mb-2">Log in to Ingetin</h1>
+      <h2 class="w-full opacity-50 text-center mb-3 text-xs md:text-sm">Enter your email & password to continue</h2>
+
+      <!-- Body -->
+      <form class="w-full" action="login" method="post">
         <div class="flex flex-col">
-
-          <div class="flex flex-col mt-4">
-            <label class="text-xl" for="name">Full Name</label>
-            <input name="name" class="border border-gray-300 rounded-lg py-3 px-4 text-base mt-2" id="email" type="text"
-              placeholder="Your Name" required>
-          </div>
-
           <div class="flex flex-col mt-4">
             <label class="text-xl" for="email">Email</label>
             <input name="email" class="border border-gray-300 rounded-lg py-3 px-4 text-base mt-2" id="email"
@@ -55,18 +51,23 @@
               type="password" placeholder="At least 8 characters" required>
           </div>
 
+          <div class="inline-block text-xs text-gray-400">
+            <label class="inline-flex items-center mt-3">
+              <input type="checkbox" class="form-checkbox h-5 w-5 text-serv-button rounded border-serv-text"><span
+                class="ml-2 text-gray-400">Remember me</span>
+            </label>
+          </div>
+
           <button class="mt-4 font-medium text-white bg-green-600 py-2 border rounded-md w-full">
-            Sign Up
+            Sign In
           </button>
         </div>
 
+        <p href="#" class="text-center py-5">
+          Dont have account? <a href="#" class="text-serv-button">Sign up</a>
+        </p>
+
       </form>
-
-      <div class="w-full text-center mt-4">
-        Already have account? <a class="text-green-600 font-medium" href="login.html">Sign in</a>
-      </div>
-
-
     </div>
     <!-- END: Right-Content -->
 
