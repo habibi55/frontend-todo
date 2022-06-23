@@ -79,7 +79,7 @@
   </div>
 
   <!-- START:Pembagian Task (FLEX)-->
-  <main class="w-full bg-white flex gap-4 pb-14 px-10 pt-50 lg:justify-between xl:justify-center">
+  <main class="bg-white flex gap-4 pb-14 px-10 pt-50 justify-between">
     <!-- START:Unscheduled -->
     <div class="section-task">
       <div class="flex items-center rounded-t-lg bg-blue-400 p-1">
@@ -195,7 +195,7 @@
     </div>
     <!-- END:Unscheduled -->
 
-    <!-- START:Today -->
+    <!-- START:Not Started -->
     <div class="section-task">
       <div class="flex items-center rounded-t-lg bg-red-400  p-1">
       </div>
@@ -306,35 +306,31 @@
         </div>
       </div>
 
-      <div class="flex flex-col flex-nowrap px-3 pb-3">
-        <div class="flex flex-col items-start rounded-lg bg-white shadow-md">
-          <div class="flex items-center rounded-t-lg bg-yellow-200 w-full p-2">
-            <?xml version="1.0"?>
-            <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18px" height="18px">
-              <path
-                d="M 12 0 L 8 4 L 12 8 L 12 5 C 15.859 5 19 8.14 19 12 C 19 12.88 18.82925 13.720094 18.53125 14.496094 L 20.046875 16.009766 C 20.651875 14.800766 21 13.442 21 12 C 21 7.038 16.963 3 12 3 L 12 0 z M 3.953125 7.9902344 C 3.348125 9.1992344 3 10.558 3 12 C 3 16.962 7.037 21 12 21 L 12 24 L 16 20 L 12 16 L 12 19 C 8.141 19 5 15.86 5 12 C 5 11.12 5.17075 10.279906 5.46875 9.5039062 L 3.953125 7.9902344 z" />
-            </svg>
-            <p class="text-sm text-yellow-600 ml-1">In Progress</p>
-          </div>
 
-          <div class="flex flex-col items-start px-2 py-1">
-            <h1 class="font-semibold text-base mb-1">Membuat Visualisasi dengan memberikan jancok</h1>
+
+      <div class="flex flex-col flex-nowrap px-3 pb-3 cursor-pointer">
+        <div data-modal-target="#modal" class="flex flex-col items-start rounded-lg bg-white shadow-md">
+
+          <div class="flex flex-col items-start px-3 py-2">
+            <h1 class="font-semibold text-base mb-1 text-left">Membuat Visualisasi dengan memberikan jancok</h1>
 
             <!-- Label -->
-            <div class="flex flex-row ">
-              <div id="kategori" class="text-xs px-2 bg-purple-300 rounded-sm text-center mt-1">
+            <div class="flex flex-row items-center flex-wrap gap-2 py-1">
+              <div id="kategori" class="text-xs px-2 bg-purple-300 rounded-sm text-center">
                 Individu
               </div>
-              <div id="kategori" class="text-xs px-2 bg-blue-300 rounded-sm text-center mt-2">
+              <div id="kategori" class="text-xs px-2 bg-blue-300 rounded-sm text-center">
                 Kuliah
               </div>
+              <div id="kategori" class="text-xs px-2 bg-orange-300 rounded-sm text-center">
+                Bisnis
+              </div>
             </div>
 
 
-
-            <div class="flex flex-row justify-center items-center mt-1">
+            <div class="flex flex-row justify-center items-center mt-2">
               <div class="flex flex-row items-center">
-                <svg class="h-3 w-3 stroke-black" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                <svg class="h-4 w-4 stroke-black" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 83.001 83.001"
                   style="enable-background:new 0 0 83.001 83.001;" xml:space="preserve">
                   <g>
@@ -381,112 +377,28 @@
                   <g>
                   </g>
                 </svg>
-                <p class="text-xs ml-1">April 1,2022</p>
-              </div>
-
-              <div class="flex flex-row  rounded-sm items-center px-1 py-1 ml-2">
-                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon h-4 w-4" viewBox="0 0 512 512">
-                  <title>Checkbox</title>
-                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="32" d="M352 176L217.6 336 160 272" />
-                  <rect x="64" y="64" width="384" height="384" rx="48" ry="48" fill="none" stroke="currentColor"
-                    stroke-linejoin="round" stroke-width="32" />
-                </svg>
-                <p class="text-xs ml-1">2/6</p>
+                <p class="text-sm ml-2">April 1,2022</p>
               </div>
             </div>
-          </div>
 
+            <!-- Icon -->
+            <div class="flex flex-row mt-2 mb-1 gap-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
 
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+              </svg>
 
-
-
-        </div>
-      </div>
-
-      <div class="flex flex-col flex-nowrap px-3 pb-3">
-        <div class="flex flex-col items-start rounded-lg bg-white shadow-md">
-          <div class="flex items-center rounded-t-lg bg-yellow-200 w-full p-2">
-            <?xml version="1.0"?>
-            <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18px" height="18px">
-              <path
-                d="M 12 0 L 8 4 L 12 8 L 12 5 C 15.859 5 19 8.14 19 12 C 19 12.88 18.82925 13.720094 18.53125 14.496094 L 20.046875 16.009766 C 20.651875 14.800766 21 13.442 21 12 C 21 7.038 16.963 3 12 3 L 12 0 z M 3.953125 7.9902344 C 3.348125 9.1992344 3 10.558 3 12 C 3 16.962 7.037 21 12 21 L 12 24 L 16 20 L 12 16 L 12 19 C 8.141 19 5 15.86 5 12 C 5 11.12 5.17075 10.279906 5.46875 9.5039062 L 3.953125 7.9902344 z" />
-            </svg>
-            <p class="text-sm text-yellow-600 ml-1">In Progress</p>
-          </div>
-
-          <div class="flex flex-col items-start px-2 py-1">
-            <h1 class="font-semibold text-base mb-1">Membuat Visualisasi dengan memberikan jancok</h1>
-            <div id="kategori" class="text-xs px-2 bg-purple-300 rounded-sm text-center mt-1">
-              Individu
-            </div>
-            <div id="kategori" class="text-xs px-2 bg-blue-300 rounded-sm text-center mt-2">
-              Kuliah
-            </div>
-
-
-            <div class="flex flex-row justify-center items-center mt-1">
-              <div class="flex flex-row items-center">
-                <svg class="h-3 w-3 stroke-black" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 83.001 83.001"
-                  style="enable-background:new 0 0 83.001 83.001;" xml:space="preserve">
-                  <g>
-                    <path d="M41.5,0C18.617,0,0.001,18.617,0.001,41.5c0,22.884,18.616,41.501,41.499,41.501C64.383,83.001,83,64.384,83,41.5
-		C83,18.617,64.382,0,41.5,0z M41.5,77.001C21.926,77.001,6,61.075,6,41.5S21.925,6,41.5,6C61.075,6,77,21.925,77,41.5
-		S61.075,77.001,41.5,77.001z" />
-                    <path d="M53.508,45.32c-0.016,0-0.03,0-0.046,0L44.5,45.454V22c0-1.657-1.343-3-3-3s-3,1.343-3,3v26.5
-		c0,0.006,0.002,0.012,0.002,0.018c0,0.01-0.002,0.019-0.002,0.027c0.002,0.122,0.025,0.237,0.041,0.354
-		c0.01,0.073,0.011,0.148,0.025,0.22c0.027,0.129,0.072,0.249,0.115,0.37c0.022,0.063,0.036,0.129,0.062,0.189
-		c0.052,0.123,0.122,0.235,0.189,0.35c0.031,0.051,0.054,0.107,0.087,0.157c0.076,0.111,0.167,0.21,0.257,0.311
-		c0.038,0.042,0.069,0.09,0.109,0.131c0.097,0.096,0.206,0.177,0.315,0.26c0.044,0.033,0.083,0.073,0.128,0.104
-		c0.118,0.08,0.247,0.143,0.376,0.205c0.045,0.021,0.085,0.051,0.131,0.07c0.15,0.063,0.31,0.107,0.472,0.146
-		c0.03,0.007,0.058,0.021,0.089,0.027c0.194,0.039,0.395,0.061,0.601,0.061c0.015,0,0.031,0,0.046,0l12.008-0.18
-		c1.656-0.025,2.979-1.389,2.955-3.045C56.483,46.634,55.144,45.32,53.508,45.32z" />
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                </svg>
-                <p class="text-xs ml-1">April 1,2022</p>
-              </div>
-
-              <div class="flex flex-row  rounded-sm items-center px-1 py-1 ml-2">
-                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon h-4 w-4" viewBox="0 0 512 512">
-                  <title>Checkbox</title>
-                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="32" d="M352 176L217.6 336 160 272" />
-                  <rect x="64" y="64" width="384" height="384" rx="48" ry="48" fill="none" stroke="currentColor"
-                    stroke-linejoin="round" stroke-width="32" />
-                </svg>
-                <p class="text-xs ml-1">2/6</p>
-              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7" />
+              </svg>
             </div>
           </div>
         </div>
@@ -511,29 +423,29 @@
       </div>
 
       <!-- START:Card Task -->
-      <div class="flex flex-col flex-nowrap px-3 pb-3">
-        <div class="flex flex-col items-start rounded-lg bg-white shadow-md">
-          <div class="flex items-center rounded-t-lg bg-red-200 w-full p-2">
-            <svg class="fill-red-500" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-              <path
-                d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm7 10h-14v4h14v-4z" />
-            </svg>
-            <p class="text-sm text-red-600 ml-2">Not Started</p>
-          </div>
+      <div class="flex flex-col flex-nowrap px-3 pb-3 cursor-pointer">
+        <div data-modal-target="#modal" class="flex flex-col items-start rounded-lg bg-white shadow-md">
 
-          <div class="flex flex-col items-start px-2 py-1">
-            <h1 class="font-semibold text-base mb-1">Membuat Visualisasi dengan memberikan jancok</h1>
-            <div id="kategori" class="text-xs px-2 bg-purple-300 rounded-sm text-center mt-1">
-              Individu
+          <div class="flex flex-col items-start px-3 py-2">
+            <h1 class="font-semibold text-base mb-1 text-left">Membuat Visualisasi dengan memberikan jancok</h1>
+
+            <!-- Label -->
+            <div class="flex flex-row items-center flex-wrap gap-2 py-1">
+              <div id="kategori" class="text-xs px-2 bg-purple-300 rounded-sm text-center">
+                Individu
+              </div>
+              <div id="kategori" class="text-xs px-2 bg-blue-300 rounded-sm text-center">
+                Kuliah
+              </div>
+              <div id="kategori" class="text-xs px-2 bg-orange-300 rounded-sm text-center">
+                Bisnis
+              </div>
             </div>
-            <div id="kategori" class="text-xs px-2 bg-blue-300 rounded-sm text-center mt-2">
-              Kuliah
-            </div>
 
 
-            <div class="flex flex-row justify-center items-center mt-1">
+            <div class="flex flex-row justify-center items-center mt-2">
               <div class="flex flex-row items-center">
-                <svg class="h-3 w-3 stroke-black" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                <svg class="h-4 w-4 stroke-black" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 83.001 83.001"
                   style="enable-background:new 0 0 83.001 83.001;" xml:space="preserve">
                   <g>
@@ -580,19 +492,28 @@
                   <g>
                   </g>
                 </svg>
-                <p class="text-xs ml-1">April 1,2022</p>
+                <p class="text-sm ml-2">April 1,2022</p>
               </div>
+            </div>
 
-              <div class="flex flex-row  rounded-sm items-center px-1 py-1 ml-2">
-                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon h-4 w-4" viewBox="0 0 512 512">
-                  <title>Checkbox</title>
-                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="32" d="M352 176L217.6 336 160 272" />
-                  <rect x="64" y="64" width="384" height="384" rx="48" ry="48" fill="none" stroke="currentColor"
-                    stroke-linejoin="round" stroke-width="32" />
-                </svg>
-                <p class="text-xs ml-1">2/6</p>
-              </div>
+            <!-- Icon -->
+            <div class="flex flex-row mt-2 mb-1 gap-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7" />
+              </svg>
             </div>
           </div>
         </div>
@@ -619,21 +540,29 @@
       </div>
 
       <!-- START:Card Task -->
-      <div class="flex flex-col flex-nowrap px-3 pb-3">
-        <div class="flex flex-col items-start rounded-lg bg-white shadow-md">
-          <div class="flex flex-col items-start px-2 py-1">
-            <h1 class="font-semibold text-base mb-1">Membuat Visualisasi dengan memberikan jancok</h1>
-            <div id="kategori" class="text-xs px-2 bg-purple-300 rounded-sm text-center mt-1">
-              Individu
-            </div>
-            <div id="kategori" class="text-xs px-2 bg-blue-300 rounded-sm text-center mt-2">
-              Kuliah
+      <div class="flex flex-col flex-nowrap px-3 pb-3 cursor-pointer">
+        <div data-modal-target="#modal" class="flex flex-col items-start rounded-lg bg-white shadow-md">
+
+          <div class="flex flex-col items-start px-3 py-2">
+            <h1 class="font-semibold text-base mb-1 text-left">Membuat Visualisasi dengan memberikan jancok</h1>
+
+            <!-- Label -->
+            <div class="flex flex-row items-center flex-wrap gap-2 py-1">
+              <div id="kategori" class="text-xs px-2 bg-purple-300 rounded-sm text-center">
+                Individu
+              </div>
+              <div id="kategori" class="text-xs px-2 bg-blue-300 rounded-sm text-center">
+                Kuliah
+              </div>
+              <div id="kategori" class="text-xs px-2 bg-orange-300 rounded-sm text-center">
+                Bisnis
+              </div>
             </div>
 
 
-            <div class="flex flex-row justify-center items-center mt-1">
+            <div class="flex flex-row justify-center items-center mt-2">
               <div class="flex flex-row items-center">
-                <svg class="h-3 w-3 stroke-black" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                <svg class="h-4 w-4 stroke-black" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 83.001 83.001"
                   style="enable-background:new 0 0 83.001 83.001;" xml:space="preserve">
                   <g>
@@ -680,26 +609,30 @@
                   <g>
                   </g>
                 </svg>
-                <p class="text-xs ml-1">April 1,2022</p>
-              </div>
-
-              <div class="flex flex-row  rounded-sm items-center px-1 py-1 ml-2">
-                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon h-4 w-4" viewBox="0 0 512 512">
-                  <title>Checkbox</title>
-                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="32" d="M352 176L217.6 336 160 272" />
-                  <rect x="64" y="64" width="384" height="384" rx="48" ry="48" fill="none" stroke="currentColor"
-                    stroke-linejoin="round" stroke-width="32" />
-                </svg>
-                <p class="text-xs ml-1">2/6</p>
+                <p class="text-sm ml-2">April 1,2022</p>
               </div>
             </div>
+
+            <!-- Icon -->
+            <div class="flex flex-row mt-2 mb-1 gap-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7" />
+              </svg>
+            </div>
           </div>
-
-
-
-
-
         </div>
       </div>
       <!-- END:Card Task -->
@@ -721,19 +654,20 @@
         id="modal">
         <h1 class="font-semibold text-2xl mb-4">Membuat Visualisasi dengan memberikan jancok</h1>
         <div class="flex flex-col mb-2">
-          <div class="flex items-center mb-2">
-            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon h-5 w-5 mr-2 opacity-60" viewBox="0 0 512 512">
+          <div class="flex flex-row items-center mb-2">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" class="ionicon h-5 w-5 mr-2 opacity-60" viewBox="0 0 512 512">
               <title>Caret Down Circle</title>
               <path
                 d="M342.43 238.23l-74.13 89.09a16 16 0 01-24.6 0l-74.13-89.09A16 16 0 01181.86 212h148.28a16 16 0 0112.29 26.23z" />
               <path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z" fill="none"
                 stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
-            </svg>
-            <h1 class="text-xl text-black">Status</h1>
+            </svg> -->
+            <h1 class="w-1/6 text-xl font-semibold text-black">Status</h1>
+            <div class="w-5/6 bg-yellow-300 rounded-sm text-center ml-8 px-2 inline-block">
+              In Progress
+            </div>
           </div>
-          <div class="w-max bg-yellow-300 rounded-sm text-center ml-8 px-2 inline-block">
-            In Progress
-          </div>
+
         </div>
 
         <div class="flex flex-col mb-2">
