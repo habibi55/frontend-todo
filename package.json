@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/habibi55/frontend-todo#readme",
   "dependencies": {
+    "flatpickr": "^4.6.13",
     "swiper": "^8.1.4"
   }
 }
