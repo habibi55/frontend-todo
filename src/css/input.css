@@ -8,6 +8,10 @@
   }
 
   /* Pop Up Task */
+  .form {
+    @apply flex flex-row items-center mb-6;
+  }
+
   .label {
     @apply flex my-4;
   }
@@ -17,7 +21,7 @@
   }
 
   .icon-popup {
-    @apply h-5 w-5 mr-2 opacity-50;
+    @apply h-5 w-5 mr-2;
   }
 
 }
