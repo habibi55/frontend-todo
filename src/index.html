@@ -29,7 +29,7 @@
   <!-- START:HEADER -->
   <header class="w-full flex justify-between p-2 px-12 bg-white fixed">
     <div class="flex items-center">
-      <div class="flex items-center">
+      <a class="flex items-center" href="index.html">
         <svg class="max-h-10 fill-cyan-700" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" zoomAndPan="magnify" viewBox="0 0 375 374.999991"
           height="100%" preserveAspectRatio="xMidYMid meet" version="1.0">
@@ -57,7 +57,7 @@
           </g>
         </svg>
         <h2 class="pl-1 text-xl font-bold">Ingetin</h2>
-      </div>
+      </a>
 
       <nav class="pl-2">
         <a class="font-bold hover:text-blue-500" href="#">Completed</a>
@@ -72,9 +72,43 @@
       </svg>
       <img class="max-h-10 rounded-full" src="/src/img/mini-profile.png" alt="">
     </div>
+
+    <!-- Profile -->
+    <div @click.away="open = false" class="hidden lg:block relative" x-data="{ open: false }">
+      <button @click="open = !open"
+        class="flex flex-row items-center w-full px-4 py-2 mt-2 text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+        Halo, Miles
+        <img class="inline ml-3 h-12 w-12 rounded-full"
+          src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
+          alt="">
+        <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
+          class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
+          <path fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+      <div x-show="open" x-transition:enter="transition ease-out duration-100"
+        x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100"
+        x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100"
+        x-transition:leave-end="transform opacity-0 scale-95"
+        class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
+        <div class="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800">
+          <a class="block px-4 py-2 mt-2 text-sm bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="profile.html">
+            Dashboard
+          </a>
+          <a class="block px-4 py-2 mt-2 text-sm bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="index.php">
+            Logout
+          </a>
+        </div>
+      </div>
+    </div>
   </header>
   <!-- END:HEADER -->
 
+  <!-- Jarak buat ke Main -->
   <div class="w-full flex justify-between py-8 bg-white">
   </div>
 
@@ -776,6 +810,30 @@
     }
 
     flatpickr("input[type=dateTime-local", config);
+  </script>
+
+  <!-- Profile Dropdown -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.1/lity.min.js"
+    integrity="sha512-UU0D/t+4/SgJpOeBYkY+lG16MaNF8aqmermRIz8dlmQhOlBnw6iQrnt4Ijty513WB3w+q4JO75IX03lDj6qQNA=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dragscroll/0.0.8/dragscroll.min.js"
+    integrity="sha512-/ncZdOhQm5pgj5KHy720Ck7XF5RzYK6rtUsLNnGcitXrKT3wUYzTrPlOSG7SdL2kDzkuLEOFvrQRyllcZkeAlg=="
+    crossorigin="anonymous"></script>
+  <script src="js/toggleModal.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".modal").on('click', ':not(.relative)', function (e) {
+        e.stopPropagation();
+      });
+      $("#loginModal").on('click', function (e) {
+        toggleModal('loginModal');
+      });
+      $("#registerModal").on('click', function (e) {
+        toggleModal('registerModal');
+      });
+    });
   </script>
 
 </body>
