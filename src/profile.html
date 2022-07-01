@@ -107,18 +107,39 @@
   <!-- END:HEADER -->
 
   <!-- Jarak buat ke Main -->
-  <div class="w-full flex justify-between py-8 bg-white">
+  <div class="w-full flex justify-between py-14 bg-white">
   </div>
 
+  <main class="flex flex-col items-center px-96">
+    <img class="h-24 w-24 rounded-full" src="img/mini-profile.png" alt="">
 
+    <!-- Edit Profile -->
+    <input type="file" accept="image/*" id="choose" name="photo" hidden required>
+    <label for="choose"
+      class="text-primer_3 border border-primer_3 hover:bg-primer_3_hover hover:text-white text-sm px-4 py-2 mt-6 rounded-lg cursor-pointer">
+      Edit Photo
+    </label>
 
-  <main class="flex mt-6 px-96">
+    <div class="w-full flex flex-col mt-4">
+      <label class="text-xl" for="name">Full Name</label>
+      <input name="name" class="border border-gray-300 rounded-lg py-3 px-4 text-base mt-2" id="email" type="text"
+        placeholder="Your Name" required>
+    </div>
+
+    <div class="w-full flex flex-col mt-4">
+      <label class="text-xl" for="email">Email</label>
+      <input name="email" class="border border-gray-300 rounded-lg py-3 px-4 text-base mt-2" id="email" type="email"
+        placeholder="name@domain.com" required>
+    </div>
+  </main>
+
+  <!-- <main class="flex mt-6 px-96">
     <div class="w-4/12 bg-green-300 p-4">
 
       <div class="flex flex-col justify-center items-center gap-4">
         <img src="img/mini-profile.png" alt="">
         <div class="flex flex-nowrap gap-4 items-center">
-          <div class="border rounded-md px-4 py-1">Choose File</div>
+          <a class="border rounded-md px-4 py-1 block" href="">Choose File</a>
           <a class="border rounded-md px-4 py-1" href="">Delete</a>
         </div>
 
@@ -142,12 +163,12 @@
 
       <div class="flex justify-end gap-4 mt-4">
         <button
-          class="text-green-500 px-4 py-2 hover:bg-green-400 hover:text-white border rounded-md border-green-400">Cancel</button>
+          class="text-primer_3 px-4 py-2 hover:bg-primer_3 hover:text-white border rounded-md border-primer_3">Cancel</button>
         <button class="bg-primer_3 text-white px-4 py-2 rounded-md hover:bg-primer_3_hover">Save Changes</button>
       </div>
     </div>
 
-  </main>
+  </main> -->
 
 
 
