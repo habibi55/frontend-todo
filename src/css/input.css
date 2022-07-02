@@ -24,6 +24,10 @@
     @apply h-5 w-5 mr-2;
   }
 
+  .nav-small {
+    @apply md:hidden w-full text-white rounded-md px-4 py-2 bg-primer_3 hover:bg-primer_3_hover;
+  }
+
 }
 
 

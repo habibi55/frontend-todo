@@ -1,3 +1,5 @@
+// Navigation Hamburger Scirpt
+
 $(document).ready(function () {
   $(".nav-toggler").each(function (_, navToggler) {
     var target = $(navToggler).data("target");
