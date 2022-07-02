@@ -31,7 +31,7 @@
 
 <body class="font-poppins">
   <!-- START:HEADER -->
-  <header class="w-full flex flex-wrap justify-between p-2 px-2 md:px-12 bg-white fixed">
+  <header class="w-full flex flex-wrap justify-between p-4 px-2 md:px-6 bg-white fixed">
     <div class="flex items-center">
       <a class="flex items-center" href="index.html">
         <svg class="max-h-10 fill-cyan-700" xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +64,6 @@
       </a>
     </div>
 
-    <!-- Navigation -->
     <button
       class="text-bold flex sm:flex p-3 rounded md:hidden lg:hidden ml-auto hover:text-primer_3 focus:outline focus:outline-2 nav-toggler"
       data-target="#navigation">
@@ -112,6 +111,7 @@
           </div>
         </div>
 
+        <!-- Navigation in Small -->
         <a class="nav-small" href="">Notification</a>
         <a class="nav-small" href="profile.html">Profile</a>
         <a class="nav-small" href="login.html">Logout</a>
@@ -126,7 +126,7 @@
     <form class="w-full items-center flex flex-col" action="register.html" method="POST">
       <img class="flex-none max-h-24 max-w-24 rounded-full" src="img/mini-profile.png" alt="">
 
-      <!-- Edit Profile -->
+      <!-- Edit Photo -->
       <input type="file" accept="image/*" id="choose" name="photo" hidden required>
       <label for="choose"
         class="text-primer_3 border border-primer_3 hover:bg-primer_3 hover:text-white text-sm px-4 py-2 mt-6 rounded-lg cursor-pointer">
